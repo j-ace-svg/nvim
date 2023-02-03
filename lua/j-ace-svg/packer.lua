@@ -23,7 +23,7 @@ return require("packer").startup(function()
 
     -- General
     use "github/copilot.vim"
-    use "mmbill/undotree"
+    use "mbbill/undotree"
     use "ThePrimeagen/vim-be-good"
 
     -- File switching
