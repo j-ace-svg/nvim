@@ -40,6 +40,6 @@ vim.opt.colorcolumn = "+80"
 vim.opt.updatetime = 50
 
 vim.opt.gdefault = true
-vim.opt.autochdir = true
+-- vim.opt.autochdir = true
 
 vim.g.mapleader = " "
