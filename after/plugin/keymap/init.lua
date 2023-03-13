@@ -15,6 +15,9 @@ nnrm("<Leader>;", ":")
 inrm("jk", "<Right><Esc>")
 inrm("kj", "<Right><Esc>")
 inrm("GG", "<Esc>bgUiwea")
+inrm("<C-t>", "<C-j>")
+inrm("<C-c>", "<C-o>O")
+inrm("<C-m>", "<C-t>")
 
 -- Text input modes
 -- lnoremap("<C-j>", "<CR>")
