@@ -66,3 +66,4 @@ nnrm("<Leader>te", ":!")
 nnrm("<Leader>tt", ":terminal<CR>i", {silent = true})
 
 -- Command Mode
+cnrm("<C-t>", "<C-j>")
