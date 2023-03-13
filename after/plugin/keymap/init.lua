@@ -58,6 +58,7 @@ vnrm("<Leader>s", ":<BS><BS><BS><BS><BS>%s/\\%V")
 nnrm("<Leader>S", ":%s/")
 vnrm("<Leader>S", ":%s/")
 nnrm("<Leader>h", ":help<Space>")
+nnrm("<Leader>l", ":lua<Space>")
 nnrm("<Leader>r<Space>", ":source<Space>")
 nnrm("<Leader>re", ":source<CR>")
 
