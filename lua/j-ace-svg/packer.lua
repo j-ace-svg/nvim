@@ -40,6 +40,9 @@ return require("packer").startup(function()
         requires = "nvim-lua/plenary.nvim"
     }
 
+    -- LSP
+    use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+
     if packer_bootstrap then
         require('packer').sync()
     end

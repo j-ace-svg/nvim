@@ -43,7 +43,9 @@ end
 inrm("<C-b>", surround_fun_ins("(", ")"), {expr = true})
 inrm("<C-l>", surround_fun_ins("[", "]"), {expr = true})
 inrm("<C-f>", surround_fun_ins("{", "}"), {expr = true})
+inrm("<C-q>", surround_fun_ins("\"", "\""), {expr = true})
 
 cnrm("<C-b>", surround_fun_com("(", ")"), {expr = true})
 cnrm("<C-l>", surround_fun_com("[", "]"), {expr = true})
 cnrm("<C-f>", surround_fun_com("{", "}"), {expr = true})
+cnrm("<C-q>", surround_fun_com("\"", "\""), {expr = true})
