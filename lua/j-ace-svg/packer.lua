@@ -16,7 +16,7 @@ return require("packer").startup(function()
 
     -- Tpope
     use "tpope/vim-fugitive"
-    use "tpope/vim-surround"
+    -- use "tpope/vim-surround"
 
     -- Theme
     use "gruvbox-community/gruvbox"
@@ -25,6 +25,10 @@ return require("packer").startup(function()
     use "github/copilot.vim"
     use "mbbill/undotree"
     use "ThePrimeagen/vim-be-good"
+    use { -- If all fails return to tpope vim-surround above
+        "kylechui/nvim-surround",
+        tag = "*"
+    }
 
     -- File switching
     use {
