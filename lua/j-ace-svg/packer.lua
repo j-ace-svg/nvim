@@ -22,7 +22,7 @@ return require("packer").startup(function()
     use "gruvbox-community/gruvbox"
 
     -- General
-    use "github/copilot.vim"
+    use { "github/copilot.vim", run = ":Copilot setup" }
     use "mbbill/undotree"
     use "ThePrimeagen/vim-be-good"
     use { -- If all fails return to tpope vim-surround above
