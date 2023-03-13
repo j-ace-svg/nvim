@@ -15,7 +15,16 @@ nnrm("<Leader>;", ":")
 inrm("jk", "<Right><Esc>")
 inrm("kj", "<Right><Esc>")
 inrm("GG", "<Esc>bgUiwea")
-inrm("<C-t>", "<C-j>")
+inrm("<C-t>", function()
+    local win = vim.api.nvim_get_current_win()
+    local byte_index = vim.api.nvim_win_get_cursor(win)[2]
+    local line = vim.api.nvim_get_current_line():sub(byte_index, byte_index + 1)
+    if "()" == line or "[]" == line or "{}" == line then
+        return "<C-j><C-j><C-g>U<Up><C-f>"
+    else
+        return "<C-j>"
+    end
+end, {expr = true})
 inrm("<C-c>", "<C-t>")
 
 -- Text input modes
