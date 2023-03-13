@@ -6,7 +6,9 @@ local surround = require('nvim-surround')
 local config = require('nvim-surround.config')
 
 surround.setup({
-
+    aliases = {
+        ["l"] = "]"
+    }
 })
 
 inrm("<C-s>", "<C-g>u<Plug>(nvim-surround-insert)")
