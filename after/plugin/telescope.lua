@@ -12,3 +12,6 @@ end)
 nnrm("<Leader>ps", function()
     builtin.grep_string({ search = vim.fn.input("Grep For > ") });
 end)
+nnrm("<Leader>pb", function()
+    builtin.buffers({ show_all_buffers = true });
+end)
