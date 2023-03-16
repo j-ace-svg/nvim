@@ -20,9 +20,9 @@ inrm("<C-t>", function()
     local byte_index = vim.api.nvim_win_get_cursor(win)[2]
     local line = vim.api.nvim_get_current_line():sub(byte_index, byte_index + 1)
     if "()" == line or "[]" == line or "{}" == line then
-        return "<C-j><C-j><C-g>U<Up><C-f>"
+        return "<C-m><C-m><C-g>U<Up><C-f>"
     else
-        return "<C-j>"
+        return "<C-m>"
     end
 end, {expr = true})
 inrm("<C-c>", "<C-t>")
@@ -75,4 +75,4 @@ nnrm("<Leader>te", ":!")
 nnrm("<Leader>tt", ":terminal<CR>i", {silent = true})
 
 -- Command Mode
-cnrm("<C-t>", "<C-j>")
+cnrm("<C-t>", "<C-m>")
