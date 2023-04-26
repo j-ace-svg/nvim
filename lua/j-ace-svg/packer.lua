@@ -40,6 +40,9 @@ return require("packer").startup(function()
         requires = "nvim-lua/plenary.nvim"
     }
 
+    -- Fun
+    use "eandrju/cellular-automaton.nvim"
+
     -- LSP
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
