@@ -29,6 +29,7 @@ return require("packer").startup(function()
         "kylechui/nvim-surround",
         tag = "*"
     }
+    use "prendradjaja/vim-vertigo"
 
     -- File switching
     use {

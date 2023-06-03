@@ -54,3 +54,5 @@ vim.opt.gdefault = true
 -- vim.opt.autochdir = true
 
 vim.g.mapleader = " "
+
+vim.g.Vertigo_homerow = 'aoeuidhtns'
