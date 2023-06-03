@@ -37,6 +37,17 @@ vim.opt.completeopt = "menuone,noinsert,noselect"
 vim.opt.signcolumn = "yes"
 vim.opt.colorcolumn = "80"
 
+vim.opt.listchars = {
+    tab = "▸ ",
+    lead = "·",
+    extends = "»",
+    precedes = "«",
+    nbsp = "␣",
+    eol = "↲",
+}
+
+vim.opt.list = true
+
 vim.opt.updatetime = 50
 
 vim.opt.gdefault = true
