@@ -46,6 +46,10 @@ return require("packer").startup(function()
     -- LSP
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
+    -- Debugging
+    use "mfussenegger/nvim-dap"
+    use { "jbyuki/one-small-step-for-vimkind", requires = {"mfussenegger/nvim-dap"} }
+
     if packer_bootstrap then
         require('packer').sync()
     end
