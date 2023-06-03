@@ -35,7 +35,7 @@ vim.opt.sidescrolloff = 8
 vim.opt.completeopt = "menuone,noinsert,noselect"
 
 vim.opt.signcolumn = "yes"
-vim.opt.colorcolumn = "+80"
+vim.opt.colorcolumn = "80"
 
 vim.opt.updatetime = 50
 
