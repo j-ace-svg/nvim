@@ -40,6 +40,8 @@ return require("packer").startup(function()
         requires = "nvim-lua/plenary.nvim"
     }
 
+    use "vifm/vifm.vim" -- Had enough of netrw
+
     -- Fun
     use "eandrju/cellular-automaton.nvim"
 
