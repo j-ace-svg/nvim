@@ -3,7 +3,7 @@ local nnrm = Remap.nnoremap
 local config = require('nvim-treesitter.configs')
 
 config.setup({
-    ensure_installed = { "c", "lua", "vim", "vimdoc", "json", "yaml", "html", "css", "javascript", "typescript", "tsx", "python", "rust", "go", "bash", "lua", "gdscript", "nix" },
+    ensure_installed = { "c", "lua", "vim", "vimdoc", "json", "yaml", "html", "css", "javascript", "typescript", "tsx", "python", "rust", "go", "bash", "lua", "gdscript", "nix", "php" },
 
     highlight = {
         enable = true,
