@@ -57,3 +57,4 @@ vim.g.mapleader = " "
 
 vim.g.Vertigo_homerow = 'aoeuIDHTNs'
 vim.g.Vertigo_homerow_onedigit = 'AOEUidhtnS'
+vim.g.Vertigo_onedigit_key = ' '
