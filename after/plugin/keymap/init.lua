@@ -4,6 +4,7 @@ local inrm = Remap.inoremap
 local onrm = Remap.onoremap
 local cnrm = Remap.cnoremap
 local vnrm = Remap.vnoremap
+local tnrm = Remap.tnoremap
 local nmap = Remap.nmap
 local ia = Remap.ia
 local ca = Remap.ca
@@ -78,6 +79,37 @@ nnrm("<Leader>re", ":source<CR>")
 -- Terminal
 nnrm("<Leader>te", ":!")
 nnrm("<Leader>tt", ":terminal<CR>i", {silent = true})
+nnrm("<Leader>tv", "<C-w>v:terminal<CR>i", {silent = true})
+nnrm("<Leader>th", ":bel split<CR>:terminal<CR>i", {silent = true})
+tnrm("<C-Space>", "<C-\\><C-n>")
+nnrm("<Leader>tp", function ()
+    local bufs = vim.api.nvim_list_bufs()
+    local term
+    local curbuf = vim.api.nvim_get_current_buf()
+    for _, buf in pairs(bufs) do
+        if vim.fn.getbufvar(buf, "&buftype") == "terminal" then
+            if buf >= curbuf and term and term < curbuf then
+                return (":b " .. term .. "<CR>")
+            end
+            term = buf
+        end
+    end
+    if term then return (":b " .. term .. "<CR>") end
+end, { expr = true, silent = true })
+nnrm("<Leader>tn", function ()
+    local bufs = vim.api.nvim_list_bufs()
+    local term
+    local curbuf = vim.api.nvim_get_current_buf()
+    for _, buf in pairs(bufs) do
+        if vim.fn.getbufvar(buf, "&buftype") == "terminal" then
+            if not term then term = buf end
+            if buf > curbuf then
+                return (":b " .. buf .. "<CR>")
+            end
+        end
+    end
+    if term then return (":b " .. term .. "<CR>") end
+end, { expr = true, silent = true})
 
 -- Command Mode
 -- cnrm("<C-t>", "<C-m>") -- Done in Fugitive config
