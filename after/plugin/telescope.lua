@@ -15,3 +15,6 @@ end)
 nnrm("<Leader>pb", function()
     builtin.buffers({ show_all_buffers = true });
 end)
+nnrm("<Leader>pt", function()
+    builtin.treesitter();
+end)
