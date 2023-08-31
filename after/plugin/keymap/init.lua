@@ -46,6 +46,7 @@ nnrm("<C-d>", "<C-d>zz")
 nnrm("<C-u>", "<C-u>zz")
 nnrm("gh", "^")
 nnrm("gl", "$")
+nnrm("<C-m>", ":")
 nnrm("<Leader>J", "mzJ`z")
 
 -- Operator Pending Mode
