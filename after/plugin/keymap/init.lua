@@ -76,6 +76,7 @@ nnrm("<Leader>bv", ":call OpenWebBrowser(\"https://duckduckgo.com/?q=\", 1)<left
 nnrm("<Leader>bs", ":exe 'WebBrowser https://duckduckgo.com/?q=\"' . input(\"Search \") . '\"'<CR>")
 nnrm("<Leader>r<Space>", ":source<Space>")
 nnrm("<Leader>re", ":source<CR>")
+nnrm("<Leader>.", ":.!$SHELL<CR>")
 
 -- Tab Management
 nnrm("<C-p>c", ":tabnew<CR>", { silent = true })
