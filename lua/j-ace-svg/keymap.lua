@@ -17,7 +17,9 @@ local function abbreviate(op)
     end
 end
 
+M.map = bind("", {noremap = false})
 M.nmap = bind("n", {noremap = false})
+M.imap = bind("i", {noremap = false})
 M.nnoremap = bind("n")
 M.vnoremap = bind("v")
 M.xnoremap = bind("x")
