@@ -20,6 +20,6 @@ local slide = {
 
 register(slide)
 
-nnrm("<leader>cam", function() start("make_it_rain") end, {silent = true})
-nnrm("<leader>cal", function() start("game_of_life") end, {silent = true})
-nnrm("<leader>cas", function() start("slide") end, {silent = true})
+nnrm("<leader>fcam", function() start("make_it_rain") end, {silent = true})
+nnrm("<leader>fcal", function() start("game_of_life") end, {silent = true})
+nnrm("<leader>fcas", function() start("slide") end, {silent = true})
