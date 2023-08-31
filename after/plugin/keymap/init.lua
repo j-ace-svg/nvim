@@ -40,8 +40,6 @@ ca("b", "bel")
 ca("sp", "split")
 
 -- Normal Mode
-nnrm("J", "5j")
-nnrm("K", "5k")
 nnrm("<C-d>", "<C-d>zz")
 nnrm("<C-u>", "<C-u>zz")
 nnrm("gh", "^")
