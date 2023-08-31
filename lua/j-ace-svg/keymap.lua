@@ -27,6 +27,7 @@ M.inoremap = bind("i")
 M.lnoremap = bind("l")
 M.onoremap = bind("o")
 M.cnoremap = bind("c")
+M.tnoremap = bind("t")
 
 M.ia = abbreviate("i")
 M.ca = abbreviate("c")
