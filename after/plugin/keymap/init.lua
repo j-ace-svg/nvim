@@ -76,6 +76,18 @@ nnrm("<Leader>bs", ":exe 'WebBrowser https://duckduckgo.com/?q=\"' . input(\"Sea
 nnrm("<Leader>r<Space>", ":source<Space>")
 nnrm("<Leader>re", ":source<CR>")
 
+-- Tab Management
+nnrm("<C-p>c", ":tabnew<CR>", { silent = true })
+nnrm("<C-p>t", ":tabnew<CR>:terminal<CR>i", { silent = true })
+nnrm("<C-p>n", ":tabnext<CR>", { silent = true })
+nnrm("<C-p>p", ":tabprev<CR>", { silent = true })
+nnrm("<C-p>q", ":tabclose<CR>", { silent = true })
+nnrm("<C-p><C-c>", ":tabnew<CR>", { silent = true })
+nnrm("<C-p><C-t>", ":tabnew<CR>:terminal<CR>i", { silent = true })
+nnrm("<C-p><C-n>", ":tabnext<CR>", { silent = true })
+nnrm("<C-p><C-p>", ":tabprev<CR>", { silent = true })
+nnrm("<C-p><C-q>", ":tabclose<CR>", { silent = true })
+
 -- Terminal
 nnrm("<Leader>te", ":!")
 nnrm("<Leader>tt", ":terminal<CR>i", {silent = true})
