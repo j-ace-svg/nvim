@@ -24,7 +24,7 @@ return require("packer").startup(function()
     -- General
     use { "github/copilot.vim", run = ":Copilot setup" }
     use "mbbill/undotree"
-    use "ThePrimeagen/vim-be-good"
+    use "m4xshen/hardtime.nvim"
     use { -- If all fails return to tpope vim-surround above
         "kylechui/nvim-surround",
         tag = "*"
