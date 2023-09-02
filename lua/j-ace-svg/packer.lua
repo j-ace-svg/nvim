@@ -41,7 +41,11 @@ return require("packer").startup(function()
         requires = "nvim-lua/plenary.nvim"
     }
 
-    use "vifm/vifm.vim" -- Had enough of netrw
+    use {
+      'stevearc/oil.nvim',
+    }
+    -- Replaced with oil.nvim, adding open and up dir bindings solves enough
+    --use "vifm/vifm.vim"
 
     -- Fun
     use "eandrju/cellular-automaton.nvim"
