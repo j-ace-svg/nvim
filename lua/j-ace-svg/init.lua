@@ -1,2 +1,2 @@
-require("j-ace-svg.packer")
 require("j-ace-svg.sets")
+require("j-ace-svg.lazy")
