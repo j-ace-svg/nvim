@@ -1,6 +1,5 @@
 return {
     'stevearc/oil.nvim',
-    ft = 'neorg',
     config = function ()
         local Remap = require("j-ace-svg.keymap")
         local nnrm = Remap.nnoremap
