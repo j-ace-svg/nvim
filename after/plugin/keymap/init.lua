@@ -40,6 +40,8 @@ ca("b", "bel")
 ca("sp", "split")
 
 -- Normal Mode
+nnrm(",", ":")
+nnrm(":", ",")
 nnrm("g,", "^")
 nnrm("g.", "$")
 nnrm("<C-d>", "<C-d>zz")
