@@ -37,6 +37,9 @@ vim.opt.completeopt = "menuone,noinsert,noselect"
 vim.opt.signcolumn = "yes"
 vim.opt.colorcolumn = "80"
 
+vim.opt.conceallevel = 2
+vim.opt.concealcursor = "nc"
+
 vim.opt.listchars = {
     tab = "▸ ",
     lead = "·",
