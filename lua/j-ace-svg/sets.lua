@@ -1,4 +1,4 @@
-vim.opt.mouse = "n"
+vim.opt.mouse = "nv"
 
 vim.opt.backup = false
 vim.opt.swapfile = false
