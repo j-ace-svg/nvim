@@ -6,6 +6,7 @@ return {
         local oil = require("oil")
 
         oil.setup({
+            default_file_explorer = false,
             keymaps = {
                 ["L"] = "actions.select",
                 ["H"] = "actions.parent",
