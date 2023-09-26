@@ -57,6 +57,7 @@ vim.opt.gdefault = true
 -- vim.opt.autochdir = true
 
 vim.g.mapleader = " "
+vim.g.maplocalleader = "cu"
 
 vim.g.Vertigo_homerow = "aoeuIDHTNs"
 vim.g.Vertigo_homerow_onedigit = "AOEUidhtnS"
