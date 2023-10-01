@@ -35,7 +35,7 @@ return {
     "eandrju/cellular-automaton.nvim",
 
     -- LSP
-    { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+    { "nvim-treesitter/nvim-treesitter", build = ":silent TSUpdate" },
 
     {
         "VonHeikemen/lsp-zero.nvim",
